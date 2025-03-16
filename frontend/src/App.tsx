@@ -1,13 +1,11 @@
-import { useState } from 'react'
 import './App.css'
-import ProjectList from './ProjectList'
+import BookList from './BookList'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <ProjectList />
+      <BookList />
     </>
   )
 }

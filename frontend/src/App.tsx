@@ -1,11 +1,23 @@
 import './App.css'
-import BookList from './BookList'
+import BooksPage from './pages/BooksPage'
+import AddCartPage from './pages/AddCartPage'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import CartPage from './pages/CartPage'
+import { CartProvider } from './context/CartContext'
 
 function App() {
 
   return (
     <>
-      <BookList />
+      <CartProvider>
+        <Router>
+          <Routes>
+            <Route path="/" element={<BooksPage />} />
+            <Route path="/addcart" element={<AddCartPage />} />
+            <Route path="/cart" element={<CartPage />} />
+          </Routes>
+        </Router>
+      </CartProvider>
     </>
   )
 }

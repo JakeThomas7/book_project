@@ -133,3 +133,8 @@
 /Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/obj/Release/net8.0/Books.API.pdb
 /Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/obj/Release/net8.0/Books.API.genruntimeconfig.cache
 /Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/obj/Release/net8.0/ref/Books.API.dll
+/Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/bin/Release/net8.0/publish/web.config
+/Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/bin/Release/net8.0/publish/appsettings.Development.json
+/Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/bin/Release/net8.0/publish/appsettings.json
+/Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/bin/Release/net8.0/publish/Books.API.deps.json
+/Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/bin/Release/net8.0/publish/Books.API.runtimeconfig.json

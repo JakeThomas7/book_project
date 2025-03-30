@@ -3,8 +3,8 @@ import { book } from '../types/Books';
 import { deleteBook, fetchBooks } from '../api/BooksAPI';
 import Pagination from '../components/Pagination';
 import NewBookForm from '../components/AddBookForm';
-import EditBookForm from '../components/EditBookForm';
 import { NavLink } from 'react-router-dom';
+import EditBookForm from '../components/EditBookForm';
 
 const AdminProjectsPage = () => {
 

@@ -19,7 +19,7 @@ export const fetchBooks = async (
             .map((cat) => `categories=${encodeURIComponent(cat)}`)
             .join('&');
 
-        const response = await fetch(`https://localhost:5000/Books/AllBooks?pageSize=${pageSize}&pageNum=${pageNum}&sort=${sort}${selectedCategories.length ? `&${categoryParams}` : ''}`);
+        const response = await fetch(`${API_URL}/AllBooks?pageSize=${pageSize}&pageNum=${pageNum}&sort=${sort}${selectedCategories.length ? `&${categoryParams}` : ''}`);
         const data = await response.json();
 
         return data;

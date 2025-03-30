@@ -53,10 +53,10 @@ function BookList({
                 .map((cat) => `categories=${encodeURIComponent(cat)}`)
                 .join('&')
 
-                const response = await fetch(`https://localhost:5000/Books/AllBooks?pageSize=${pageSize}&pageNum=${pageNum}&sort=${sort}${selectedCategories.length ? `&${categoryParams}` : ''}`);
+                const response = await fetch(`https://bookprojectjacobbackend.azurewebsites.net/BooksAllBooks?pageSize=${pageSize}&pageNum=${pageNum}&sort=${sort}${selectedCategories.length ? `&${categoryParams}` : ''}`);
                 const data = await response.json();
 
-                console.log(`https://localhost:5000/Books/AllBooks?pageSize=${pageSize}&pageNum=${pageNum}&sort=${sort}`)
+                console.log(`https://bookprojectjacobbackend.azurewebsites.net/Books/AllBooks?pageSize=${pageSize}&pageNum=${pageNum}&sort=${sort}`)
 
                 console.log(data)
                 setBooks(data.books);

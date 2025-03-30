@@ -1,8 +1,8 @@
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
 import { book } from "../types/Books";
 import { useState, useEffect } from "react";
 import { useCart } from "../context/CartContext";
-import { fetchBooks } from "../api/BooksAPI";
+//import { fetchBooks } from "../api/BooksAPI";
 
 function BookList({
     selectedCategories,
@@ -15,34 +15,34 @@ function BookList({
     const [books, setBooks] = useState<book[]>([]);
     const [pageSize, setPageSize] = useState<number>(5);
     const [pageNum, setPageNum] = useState<number>(1);
-    const [totalItems, setTotalItems] = useState<number>(0);
+    //const [totalItems, setTotalItems] = useState<number>(0);
     const [totalPages, setTotalPages] = useState<number>(0);
-    const navigate = useNavigate();
-    const {cart, addToCart} = useCart();
+    //const navigate = useNavigate();
+    const {addToCart} = useCart();
 
-    const [error, setError] = useState<string | null>(null);
-    const [loading, setLoading] = useState<boolean>(false);
+    //const [error, setError] = useState<string | null>(null);
+    //const [loading, setLoading] = useState<boolean>(false);
 
     const handleAddToCart = (book: book) => {
         addToCart(book)
     }
 
-    useEffect(() => {
-        const loadBooks = async () => {
-            try {
-                setLoading(true);
-                const data = await fetchBooks(pageSize, pageNum, selectedCategories, sort)
+    // useEffect(() => {
+    //     const loadBooks = async () => {
+    //         try {
+    //             setLoading(true);
+    //             const data = await fetchBooks(pageSize, pageNum, selectedCategories, sort)
 
-                setBooks(data.books);
-                setTotalItems(data.totalNumBooks);
-                setTotalPages(Math.ceil(data.totalNumBooks / pageSize));
-            } catch (e) {
-                setError((e as Error).message);
-            } finally {
-                setLoading(false)
-            }
-        }
-    },  [pageSize, pageNum, selectedCategories, sort]);
+    //             setBooks(data.books);
+    //             setTotalItems(data.totalNumBooks);
+    //             setTotalPages(Math.ceil(data.totalNumBooks / pageSize));
+    //         } catch (e) {
+    //             setError((e as Error).message);
+    //         } finally {
+    //             setLoading(false)
+    //         }
+    //     }
+    // },  [pageSize, pageNum, selectedCategories, sort]);
     
     // Fetch books from API whenever pageSize or pageNum changes
     useEffect(() => {
@@ -60,7 +60,7 @@ function BookList({
 
                 console.log(data)
                 setBooks(data.books);
-                setTotalItems(data.totalNumBooks);
+                //setTotalItems(data.totalNumBooks);
                 setTotalPages(Math.ceil(data.totalNumBooks / pageSize));
             } catch (error) {
                 console.error("Error fetching books:", error);

@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { book } from '../types/Books';
 import { deleteBook, fetchBooks } from '../api/BooksAPI';
 import Pagination from '../components/Pagination';
 import NewBookForm from '../components/AddBookForm';
-import EditBookForm from '../components/editBookForm';
+import EditBookForm from '../components/EditBookForm';
 import { NavLink } from 'react-router-dom';
 
 const AdminProjectsPage = () => {

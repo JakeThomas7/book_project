@@ -138,3 +138,8 @@
 /Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/bin/Release/net8.0/publish/appsettings.json
 /Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/bin/Release/net8.0/publish/Books.API.deps.json
 /Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/bin/Release/net8.0/publish/Books.API.runtimeconfig.json
+/Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/bin/Release/net8.0/publish/publish/web.config
+/Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/bin/Release/net8.0/publish/publish/appsettings.Development.json
+/Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/bin/Release/net8.0/publish/publish/appsettings.json
+/Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/bin/Release/net8.0/publish/publish/Books.API.deps.json
+/Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/bin/Release/net8.0/publish/publish/Books.API.runtimeconfig.json

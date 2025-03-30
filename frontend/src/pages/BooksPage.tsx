@@ -4,7 +4,7 @@ import CategoryFilter from '../components/CategoryFilter'
 import WelcomeTitle from '../components/WelcomeTitle'
 import CartSummary from '../components/CartSummary'
 import { useCart } from '../context/CartContext'
-import { useNavigate } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import SortItems from '../components/SortItems'
 import './BooksPage.css'
 
@@ -19,6 +19,8 @@ function BooksPage() {
           <div className="row">
             <WelcomeTitle />
           </div>
+          <NavLink className="btn btn-secondary ms-auto mb-2" to="/admin"
+          style={{position: "fixed", top: "20px", right: "20px"}}>Amin Manage Books</NavLink>
           <div className="row" style={{ minHeight: '80vh' }}>
             {/* Filters and Cart */}
             <div className="col-md-3" style={{ position: 'sticky', top: '20px' }}>

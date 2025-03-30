@@ -4,6 +4,7 @@ import AddCartPage from './pages/AddCartPage'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import CartPage from './pages/CartPage'
 import { CartProvider } from './context/CartContext'
+import AdminProjectsPage from './pages/AdminProjectsPage'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" element={<BooksPage />} />
             <Route path="/addcart" element={<AddCartPage />} />
             <Route path="/cart" element={<CartPage />} />
+            <Route path="/admin" element={<AdminProjectsPage />} />
           </Routes>
         </Router>
       </CartProvider>

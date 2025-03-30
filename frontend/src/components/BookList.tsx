@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { book } from "../types/Books";
 import { useState, useEffect } from "react";
 import { useCart } from "../context/CartContext";
+import { fetchBooks } from "../api/BooksAPI";
 
 function BookList({
     selectedCategories,
@@ -19,9 +20,29 @@ function BookList({
     const navigate = useNavigate();
     const {cart, addToCart} = useCart();
 
+    const [error, setError] = useState<string | null>(null);
+    const [loading, setLoading] = useState<boolean>(false);
+
     const handleAddToCart = (book: book) => {
         addToCart(book)
     }
+
+    useEffect(() => {
+        const loadBooks = async () => {
+            try {
+                setLoading(true);
+                const data = await fetchBooks(pageSize, pageNum, selectedCategories, sort)
+
+                setBooks(data.books);
+                setTotalItems(data.totalNumBooks);
+                setTotalPages(Math.ceil(data.totalNumBooks / pageSize));
+            } catch (e) {
+                setError((e as Error).message);
+            } finally {
+                setLoading(false)
+            }
+        }
+    },  [pageSize, pageNum, selectedCategories, sort]);
     
     // Fetch books from API whenever pageSize or pageNum changes
     useEffect(() => {

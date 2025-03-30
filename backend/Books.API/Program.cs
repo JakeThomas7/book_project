@@ -1,3 +1,4 @@
+using System.Runtime.InteropServices.JavaScript;
 using Microsoft.EntityFrameworkCore;
 using Books.API.Data;
 
@@ -17,9 +18,9 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactAppBooks", policy =>
     {
-        policy.WithOrigins("http://localhost:3000")
-            .AllowAnyMethod()
-            .AllowAnyHeader();
+        policy.AllowAnyOrigin()   // Allow any origin
+            .AllowAnyMethod()   // Allow any HTTP method (GET, POST, etc.)
+            .AllowAnyHeader();  // Allow any headers
     });
 });
 

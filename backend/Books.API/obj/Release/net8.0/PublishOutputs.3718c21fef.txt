@@ -1,16 +1,6 @@
 /Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/publish/Books.API
-/Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/publish/publish/publish/web.config
-/Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/publish/publish/web.config
 /Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/publish/appsettings.Development.json
 /Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/publish/appsettings.json
-/Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/publish/publish/appsettings.Development.json
-/Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/publish/publish/appsettings.json
-/Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/publish/publish/Books.API.deps.json
-/Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/publish/publish/Books.API.runtimeconfig.json
-/Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/publish/publish/publish/appsettings.Development.json
-/Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/publish/publish/publish/appsettings.json
-/Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/publish/publish/publish/Books.API.deps.json
-/Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/publish/publish/publish/Books.API.runtimeconfig.json
 /Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/publish/Bookstore.sqlite
 /Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/publish/Books.API.dll
 /Users/jacobthomas/Documents/byu_classes/winter_2025/IS413/books_project/backend/Books.API/publish/Books.API.runtimeconfig.json
